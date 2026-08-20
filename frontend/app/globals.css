@@ -5,10 +5,16 @@
   --brown: #351B14;
   --maroon: #8F1712;
   --gold: #D9A646;
+}
 
+@theme {
+  --color-cream: #F6F0E6;
+  --color-brown: #351B14;
+  --color-maroon: #8F1712;
+  --color-gold: #D9A646;
 }
 
 body {
   background: var(--cream);
-  color: var(--foreground);
+  color: var(--brown);
 }
