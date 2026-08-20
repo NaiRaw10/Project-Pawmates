@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #F6F0E6;
+  --brown: #351B14;
+  --maroon: #8F1712;
+  --gold: #D9A646;
+
+}
+
+body {
+  background: var(--cream);
+  color: var(--foreground);
+}
