@@ -27,10 +27,52 @@ export default function About() {
             </h2>
 
             <p className="mt-5 max-w-2xl leading-relaxed text-[#665A54]">
-            AMAGI lahir tahun 2019 dari sekelompok kecil pemilik anjing
+            Pawmates lahir tahun 2019 dari sekelompok kecil pemilik anjing
             yang rutin berkumpul di taman kota tiap akhir pekan. Kini kami
             telah berkembang menjadi komunitas nasional dengan ribuan anggota.
             </p>
+
+            <div className="mt-8 grid gap-7 sm:grid-cols-2">
+                <div>
+                    <h3 className="font-bold text-brown">
+                    🐾 Komunitas Hangat
+                    </h3>
+
+                    <p className="mt-2 text-sm text-gray-600">
+                    Saling dukung antar pemilik anjing.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 className="font-bold text-brown">
+                    🐾 Event Rutin
+                    </h3>
+
+                    <p className="mt-2 text-sm text-gray-600">
+                    Jalan pagi & gathering tiap bulan.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 className="font-bold text-brown">
+                    🐾 Info & Edukasi
+                    </h3>
+
+                    <p className="mt-2 text-sm text-gray-600">
+                    Tips kesehatan dari dokter hewan.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 className="font-bold text-brown">
+                    🐾 Bantu Adopsi
+                    </h3>
+
+                    <p className="mt-2 text-sm text-gray-600">
+                    Menjembatani anjing dengan keluarga baru.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
   );
