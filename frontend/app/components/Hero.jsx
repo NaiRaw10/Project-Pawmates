@@ -22,14 +22,14 @@ export default function Hero() {
             <div className="mt-7 flex flex-wrap gap-4">
                 <a
                     href="#join"
-                    className="rounded-full bg-maroon px-6 py-3 text-sm font-semibold text-white"
+                    className="rounded-full bg-[#8F1712] px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#70120E] hover:shadow-lg"
                 >
                     Gabung Komunitas
                 </a>
 
                 <a
                     href="#gallery"
-                    className="rounded-full border border-brown px-6 py-3 text-sm font-semibold text-brown"
+                    className="rounded-full border border-[#351B14] px-6 py-3 text-sm font-semibold text-[#351B14] transition-all duration-300 hover:-translate-y-1 hover:bg-[#351B14] hover:text-white hover:shadow-md"
                 >
                     Lihat Galeri
                 </a>
@@ -65,6 +65,16 @@ export default function Hero() {
                         Event Tiap Tahun
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <div className="flex justify-center">
+            <div className="h-120 w-full max-w-150 overflow-hidden rounded-[35%]">
+                <img
+                src="/images/image.png"
+                alt="Anjing Pawmates"
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
             </div>
         </div>
     </section>
