@@ -4,8 +4,8 @@ export default function JoinCommunity() {
       id="join"
       className="px-6 py-16 sm:px-10 sm:py-24"
     >
-      <div className="rounded-[30px] bg-maroon p-7 text-white sm:p-10 md:p-14">
-        <div>
+      <div className="grid gap-8 rounded-[30px] bg-maroon p-7 text-white sm:p-10 md:grid-cols-2 md:gap-10 md:p-14">       
+        <div className="flex flex-col justify-center">
           <h2 className="text-3xl font-bold leading-tight">
             Yuk gabung, jadi bagian dari keluarga Pawmates!
           </h2>
@@ -15,6 +15,29 @@ export default function JoinCommunity() {
             Isi form di samping, tim kami akan segera membalas.
           </p>
         </div>
+
+        <form className="rounded-2xl bg-white p-6 text-black sm:p-7">
+          <input
+            type="text"
+            name="nama"
+            placeholder="Nama lengkap"
+            className="w-full border-b border-gray-300 py-3 outline-none"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Alamat email"
+            className="mt-2 w-full border-b border-gray-300 py-3 outline-none"
+          />
+
+          <textarea
+            name="pesan"
+            placeholder="Ceritakan tentang sahabat bulumu..."
+            className="mt-2 h-24 w-full resize-none border-b border-gray-300 py-3 outline-none"
+          />
+        </form>
+
       </div>
     </section>
   );
