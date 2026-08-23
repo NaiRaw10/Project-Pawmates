@@ -36,6 +36,23 @@ export default function JoinCommunity() {
             placeholder="Ceritakan tentang sahabat bulumu..."
             className="mt-2 h-24 w-full resize-none border-b border-gray-300 py-3 outline-none"
           />
+
+            <button
+                type="submit"
+                className="
+                mt-6
+                w-full
+                rounded-full
+                bg-gold
+                py-3
+                font-semibold
+                text-brown
+                transition
+                hover:bg-[#c99536]
+                "
+            >
+                Kirim Pesan
+            </button>
         </form>
 
       </div>
