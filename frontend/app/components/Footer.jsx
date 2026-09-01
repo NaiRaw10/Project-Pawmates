@@ -17,6 +17,42 @@ export default function Footer() {
           </p>
         </div>
 
+        <div>
+          <h3 className="font-bold">
+            Navigasi
+          </h3>
+
+          <div className="mt-4 space-y-3 text-sm text-gray-300">
+            <a href="#home" className="block hover:text-white">
+              Beranda
+            </a>
+
+            <a href="#about" className="block hover:text-white">
+              Tentang Kami
+            </a>
+
+            <a href="#gallery" className="block hover:text-white">
+              Galeri
+            </a>
+
+            <a href="#join" className="block hover:text-white">
+              Kontak
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 className="font-bold">
+            Komunitas
+          </h3>
+
+          <div className="mt-4 space-y-3 text-sm text-gray-300">
+            <p>Cara Bergabung</p>
+            <p>Adopsi Anjing</p>
+            <p>Kalender Event</p>
+            <p>FAQ</p>
+          </div>
+        </div>
       </div>
     </footer>
   );
