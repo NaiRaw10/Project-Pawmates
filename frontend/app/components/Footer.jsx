@@ -74,6 +74,18 @@ export default function Footer() {
             </div>
         </div>
       </div>
+
+      <div className="mt-10 border-t border-white/10 pt-5 text-xs text-gray-400">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+                © 2026 Pawmates — Komunitas Pecinta Anjing. Semua hak cipta dilindungi.
+            </p>
+
+            <p>
+                Made with by Pawmates Team
+            </p>
+        </div>
+      </div>
     </footer>
   );
 }
