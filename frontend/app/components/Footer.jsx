@@ -53,6 +53,26 @@ export default function Footer() {
             <p>FAQ</p>
           </div>
         </div>
+
+        <div>
+            <h3 className="font-bold">
+                Hubungi Kami
+            </h3>
+
+            <div className="mt-4 space-y-3 text-sm text-gray-300">
+                <p>
+                    Jl. Taman Anjing No. 8, Jakarta Selatan
+                </p>
+
+                <p>
+                    0812-3456-7890
+                </p>
+
+                <p>
+                    halo@pawmates.id
+                </p>
+            </div>
+        </div>
       </div>
     </footer>
   );
