@@ -1,10 +1,15 @@
 export default function Footer() {
   return (
     <footer
-      id="contact"
-      className="bg-[#2F1710] px-10 py-14 text-white"
-    >
-      <div className="grid gap-10 md:grid-cols-4">
+        id="contact"
+        className="
+            bg-[#2F1710]
+            px-6
+            py-14
+            text-white
+            sm:px-10
+    ">
+      <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
         <div>
           <h2 className="text-xl font-bold text-gold">
             Pawmates
