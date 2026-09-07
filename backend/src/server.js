@@ -3,6 +3,8 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 
+const db = require("./config/database");
+
 const app = express();
 
 const PORT = process.env.PORT || 3011;
@@ -16,6 +18,15 @@ app.get("/", (req, res) => {
     message: "Pawmatess API is running",
   });
 });
+
+db.getConnection()
+  .then((connection) => {
+    console.log("Database connected successfully");
+    connection.release();
+  })
+  .catch((error) => {
+    console.error("Database connection failed:", error.message);
+  });
 
 app.listen(PORT, () => {
   console.log(`Pawmatess API running on http://localhost:${PORT}`);
