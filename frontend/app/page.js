@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import JoinCommunity from "./components/Contact";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
@@ -10,12 +11,14 @@ export default function Home() {
       <Navbar />
 
       <Hero></Hero>
-
-      <JoinCommunity></JoinCommunity>
+    
+      <About></About>
     
       <Gallery></Gallery>
     
-      <About></About>
+      <JoinCommunity></JoinCommunity>
+    
+      <Footer></Footer>
     </>
   );
 }
