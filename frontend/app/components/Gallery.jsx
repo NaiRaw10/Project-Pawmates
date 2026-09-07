@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { getPhotos } from "@/lib/api";
 import DriftWall from "./DriftWall";
 
 export default function Gallery() {
@@ -8,6 +9,7 @@ export default function Gallery() {
   const [loading, setLoading] = useState(true);
   const [columns, setColumns] = useState(5);
 
+  // Responsive columns
   useEffect(() => {
     const updateColumns = () => {
       if (window.innerWidth < 640) {
@@ -30,20 +32,13 @@ export default function Gallery() {
     };
   }, []);
 
+  // Ambil data foto dari API
   useEffect(() => {
     const fetchPhotos = async () => {
       try {
-        const response = await fetch(
-          "http://localhost:3001/api/photos"
-        );
+        const data = await getPhotos();
 
-        const result = await response.json();
-
-        if (!response.ok) {
-          throw new Error("Gagal mengambil data foto.");
-        }
-
-        setPhotos(result.data);
+        setPhotos(data);
       } catch (error) {
         console.error("Gagal mengambil foto:", error);
       } finally {
