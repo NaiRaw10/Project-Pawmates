@@ -5,8 +5,8 @@ const cors = require("cors");
 
 const db = require("./config/database");
 
-const contactRoutes = require("./routes/contactRoutes");
 const photoRoutes = require("./routes/photoRoutes");
+const contactRoutes = require("./routes/contactRoutes");
 
 const app = express();
 
