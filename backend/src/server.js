@@ -5,12 +5,18 @@ const cors = require("cors");
 
 const db = require("./config/database");
 
+const contactRoutes = require("./routes/contactRoutes");
+const photoRoutes = require("./routes/photoRoutes");
+
 const app = express();
 
 const PORT = process.env.PORT || 3011;
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/api/photos", photoRoutes);
+app.use("/api/contacts", contactRoutes);
 
 app.get("/", (req, res) => {
   res.json({
