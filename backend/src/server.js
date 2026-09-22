@@ -34,6 +34,6 @@ db.getConnection()
     console.error("Database connection failed:", error.message);
   });
 
-app.listen(PORT, () => {
-  console.log(`Pawmatess API running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Pawmatess API running on port ${PORT}`);
 });
