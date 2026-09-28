@@ -25,10 +25,10 @@ app.get("/", (req, res) => {
   });
 });
 
-db.getConnection()
-  .then((connection) => {
+// Test koneksi database PostgreSQL / Supabase
+db.query("SELECT NOW()")
+  .then(() => {
     console.log("Database connected successfully");
-    connection.release();
   })
   .catch((error) => {
     console.error("Database connection failed:", error.message);
