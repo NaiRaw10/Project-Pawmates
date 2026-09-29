@@ -1,7 +1,7 @@
 const db = require("../config/database");
 
 const getAllPhotos = async () => {
-  const [rows] = await db.query(`
+  const result = await db.query(`
     SELECT
       id,
       title,
@@ -11,7 +11,7 @@ const getAllPhotos = async () => {
     ORDER BY created_at DESC
   `);
 
-  return rows;
+  return result.rows;
 };
 
 module.exports = {
