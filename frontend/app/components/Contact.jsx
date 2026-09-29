@@ -69,7 +69,8 @@ export default function JoinCommunity() {
         </div>
 
         <form
-          onSubmit={handleSubmit}
+          action="https://formspree.io/f/xvkgdrgk"
+          method="POST"
           className="rounded-2xl bg-white p-6 text-black sm:p-7"
         >
           <input
